@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+.btn {
+    font-family: 'Manrope', sans-serif;
+    border: none;
+    background-color: #019EFF;
+    color: rgb(255,255,255);
+    padding: 1rem 3rem;
+    font-size: 1.25rem;
+    border-radius: 50px;
+}
