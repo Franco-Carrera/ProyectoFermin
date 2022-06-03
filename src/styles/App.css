@@ -2,6 +2,7 @@
 :root {
   --font: "Manrope", sans-serif;
   --max-width: 51.5rem;
+  --max-width-two: 1178px;
   --header-height: 4.5rem;
   --text-color: #313332;
 }
@@ -37,62 +38,26 @@ button {
   cursor: pointer;
 }
 
-/*
-#root {
-  display: grid;
-  /* font-size: 1.6rem; */
-/* gap: 1rem; */
-/* grid-template-rows: auto 1fr auto; */
-/* grid-template-columns: 100%; */
-/* justify-content: center; */
-/* margin: auto; */
-/* max-width: 136.6rem; */
-/* min-height: 100vh; */
-/* padding: 1.6rem; */
-/* width: 100%; */
-/* } */
-
-/* 
-  --figma-width: 1200px;
-}
-
-html {
-  font-size: 62.5%;
-  list-style-type: none;
-  scroll-behavior: smooth;
-  box-sizing: border-box;
-}
-
-*,
-::before,
-::after {
-  box-sizing: inherit;
-  /* opción d margin y padding 0 
-}
-
-body {
-  margin: 0;
-  text-rendering: optimizeSpeed;
-  width: 100%;
-  min-height: 100vh;
-}
-
-button {
-  cursor: pointer;
-}
-
 h1 {
+  font-size: 5rem;
+}
+
+h1,
+h2,
+h3,
+p,
+figure {
   margin: 0;
-  font-size: 12rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  max-width: 75ch;
 }
 
-*/
+/***********Utilities**************/
+
+.container__work {
+  width: var(--max-width-two);
+  margin-left: auto;
+  margin-right: auto;
+}
