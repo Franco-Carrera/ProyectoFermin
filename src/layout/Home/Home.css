@@ -38,6 +38,9 @@
   color: #ffffff;
   background-color: #019eff;
   line-height: 27px;
+
+  /* font-weight: 800;
+  letter-spacing: 0.02em; */
 }
 
 .content-all {
@@ -57,16 +60,23 @@
   display: flex;
   margin: 5vh 0vh 0vh 7vh;
 }
+.line__list__item:active {
+  color: #ad4184; /*active*/
+}
 .line__list__item {
   font-size: 2.4rem;
   height: 2.4rem;
   padding: 2.46rem 1.2rem;
+}
+.line__list__item svg:hover {
+  fill: #ff009d;
 }
 
 /* ------------------- */
 .main {
   display: grid;
   grid-template-areas: "text illustration";
+  padding-bottom: 12rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -79,6 +89,7 @@
   /* display: flex; */
   /* flex-direction: column; */
   /* align-items: flex-start; */
+  padding-top: 1rem;
   padding-left: 10rem;
   /* padding-right: 10rem; */
   max-width: max-content;
@@ -95,11 +106,16 @@
 .main__col__rectangles {
   width: 24px;
   position: relative;
-  top: 230px;
+  /* top: 230px; */
+  top: 220px;
 }
 
 .main__col__info {
-  padding: 0vh 0vh 2vh 8vh;
+  padding: 10vh 0vh 2vh 8vh;
+}
+.main__col__info h1 span,
+h3 span {
+  display: block;
 }
 
 .one svg {
@@ -108,15 +124,34 @@
   cursor: pointer;
 }
 
+.rectangle__one {
+  bottom: 29px;
+  /* height: 26px; */
+}
+
+.rectangle__one > div > svg {
+  height: 61px;
+}
+/*  */
+.rectangle__two {
+  height: 55px;
+}
 .rectangle__two > div > svg {
   position: relative;
-  bottom: 16px;
+  height: 61px;
+  bottom: 15px;
+}
+/*  */
+.rectangle__three {
+  height: 50px;
 }
 .rectangle__three > div > svg {
   position: relative;
-  bottom: 32px;
+  height: 60px;
+  bottom: 21px;
 }
-/*Ej aquí. */
+
+/*Ej aquí. lograr ponerle la clase directo al svg*/
 
 .two svg {
   fill: rgba(49, 51, 50, 0.6);

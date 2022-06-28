@@ -1,0 +1,67 @@
+.rectangle__detail {
+  padding-left: 7rem;
+  /* margin-top: -10rem; */
+}
+.section {
+  padding-top: 10rem;
+  padding-bottom: 7rem;
+}
+
+.detail__events {
+  display: flex;
+}
+
+.row__wrap {
+  margin-bottom: 3rem;
+}
+.row__wrap picture {
+  width: 92%;
+  margin: 0 1rem;
+}
+
+/*
+.row__wrap picture img {
+  /* width: 100%; */
+
+/* width: 330px;
+  height: 547px; */
+
+/* height: 100%; 
+  width: 318px;
+  height: 490px;
+}*/
+
+.row__wrap picture img {
+  /* width: 100%; */
+  /* height: 100%; */
+
+  /* width: 374px;
+  height: 547px; */
+
+  width: 316px;
+  height: 540px;
+
+  /* mix-blend-mode: color; */
+  background-color: #0094ff;
+}
+
+.wrap__picture {
+  margin: 0 1rem;
+}
+picture .picture__four {
+  width: 97%;
+  height: 457px;
+  /* que no afecte a otros estilos del sitio */
+}
+
+.picture__three {
+  width: 92%;
+  height: 1032px;
+  margin: 0 0.5rem;
+}
+/* picture .picture__three {
+  height: 38rem;
+  clases dinámicas check
+} */
+
+/* Delete assets sobrantes and do 3 push  */

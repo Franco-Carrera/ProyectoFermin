@@ -8,37 +8,44 @@ import { ReactSVG } from "react-svg";
 const About = () => {
   return (
     <>
-      <section className="about">
-        {/* <article> */}
-        <ReactSVG
-          src={circleTwo}
-          alt="jsonalt.logo1"
-          className="logo-graphic-two"
-        />
+      <section className="about" id="about">
+        <article>
+          {/* <section> */}
+          <aside className="about__col__circle__and__img">
+            <ReactSVG src={circleTwo} className="circle__two" />
 
-        <picture>
-          <img src={imageFermin} alt="" className="image__fermin" />
-        </picture>
-        {/* </article> */}
+            <div className="caja">
+              <img src={imageFermin} alt="ImageFermin" className="image__02" />
+              <div className="backdrop-filter"></div>
+            </div>
 
-        <article className="text">
-          <aside className="text__top">
-            <picture>
-              <img src={two} alt="" className="image__02" />
-            </picture>
-            <h2>Sobre mi</h2>
+            <aside className="about__col__02__and__text">
+              <section className="about__col__02">
+                <ReactSVG src={two} className="__02" />
+                <h1 className="about__col__02__and__text__title">Sobre mi</h1>
+              </section>
+
+              <section className="about__contain">
+                <p>
+                  ¡Hola! Mi nombre es Fermín y soy diseñador en {/*<br />*/}
+                  comunicación visual, fotógrafo y especialista en {/* <br />*/}
+                  comunicación digital y redes.
+                </p>
+                <aside className="text-center contain__button__home">
+                  <button className="button__home">Ver más</button>
+                </aside>
+              </section>
+            </aside>
           </aside>
-
-          <div>
-            <p>
-              ¡Hola! Mi nombre es Fermín y soy diseñador en comunicación visual,
-              fotógrafo y especialista en comunicación digital y redes.
-            </p>
-          </div>
+          {/* </section> */}
         </article>
       </section>
     </>
   );
 };
+
+/***F9F9F9
+ *
+ * * */
 
 export default About;

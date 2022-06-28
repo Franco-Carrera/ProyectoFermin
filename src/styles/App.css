@@ -1,7 +1,7 @@
 /* ******* Custom Properties ********* */
 :root {
   --font: "Manrope", sans-serif;
-  --max-width: 51.5rem;
+  /* --max-width: 51.5rem; */
   --max-width-two: 1178px;
   --header-height: 4.5rem;
   --text-color: #313332;
@@ -9,29 +9,35 @@
 
 /******* Reset *************/
 html {
-  font-family: var(--font);
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  font-family: var(--font);
   font-size: 62.5%;
   list-style-type: none;
+  scroll-behavior: smooth;
 }
 
 *,
-::before,
-::after {
+::after,
+::before {
   box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 body {
   margin: 0;
+  /* padding: 0; */
   overflow-x: hidden;
   color: var(--text-color);
+  background-color: rgb(252, 252, 252);
 }
 
 img {
   width: 100%;
   height: auto;
-  border: 0;
 }
 
 button {
@@ -56,8 +62,11 @@ p {
 
 /***********Utilities**************/
 
-.container__work {
+/* .container__work {
   width: var(--max-width-two);
   margin-left: auto;
   margin-right: auto;
+} */
+.text-center {
+  text-align: center;
 }

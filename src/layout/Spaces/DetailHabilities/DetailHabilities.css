@@ -1,0 +1,27 @@
+.article__skills__habilities {
+  padding-top: 7rem;
+  padding-left: 5rem;
+}
+
+.main__habilities {
+  display: flex;
+  flex-basis: 45% 65%;
+  /* align-items: center; */
+}
+
+.list__skills__habilities {
+  /* display: flex;  */
+  flex-direction: column;
+  padding-top: 5rem;
+  /* margin: 1rem; */
+}
+
+.item__list__skill {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+.item__list__skill span {
+  padding: 1rem;
+  font-size: 20px;
+}

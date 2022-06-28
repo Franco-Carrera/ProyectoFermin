@@ -1,17 +1,13 @@
 import React from "react";
 import "./Work.css";
-<<<<<<< HEAD
-=======
-import { Fragment } from "react";
->>>>>>> b572c1f16cb57f21e4a1744c11cc9d0c8fd8a2b0
+import { Link } from "react-router-dom";
 import work from "../../assets/image/image-work.svg";
 import one from "../../assets/image/01.svg";
 
 const Work = () => {
   return (
-<<<<<<< HEAD
     <>
-      <section className="work container__work">
+      <section className="work" id="work">
         <main>
           <div className="work-header">
             <picture>
@@ -21,12 +17,13 @@ const Work = () => {
           </div>
           <article className="work-text">
             <aside>
-              <p>
-                A lo largo de mi carrera me ha tocado trabajar con una amplia
-                gama de clientes que van desde espacios culturales hasta
-                comercios como restaurantes, centros de estética y muchos más.
-              </p>
-              <button>Ver más</button>
+              <p> A lo largo de mi carrera me ha tocado trabajar con </p>
+              <p>una amplia gama de clientes que van desde espacios</p>
+              <p>culturales hasta comercios como restaurantes,</p>
+              <p> centros de estética y muchos más.</p>
+              <Link className="link__button" to={`/detail-work`}>
+                <button className="button__home">Ver más</button>
+              </Link>
             </aside>
           </article>
         </main>
@@ -39,34 +36,3 @@ const Work = () => {
 };
 
 export default Work;
-=======
-    <Fragment>
-        <section class='work'>
-            <div>
-                <div class='work-header'>
-                    <picture>
-                        <img src={one} alt='one' />
-                    </picture>
-                    <h2>Trabajos</h2>
-                </div>
-                <div class='work-text'>
-                    <div>
-                        <p>
-                            A lo largo de mi carrera me ha tocado trabajar con una amplia gama de clientes que van desde espacios culturales hasta comercios como restaurantes, centros de estética y muchos más.
-                        </p>
-                        <button>
-                            Ver más
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <picture>
-                <img src={work} alt='work' />
-            </picture>
-        </section>
-    </Fragment>
-  )
-}
-
-export default Work
->>>>>>> b572c1f16cb57f21e4a1744c11cc9d0c8fd8a2b0

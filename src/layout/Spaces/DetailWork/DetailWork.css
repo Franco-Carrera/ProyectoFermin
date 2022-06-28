@@ -1,0 +1,117 @@
+/*esta flecha me gusta y se ve prototipada más arriba*/
+/* Mostrar avances y preguntar si se requiere más espacio entre elementos */
+
+.arrowLeftWork {
+  padding: 5rem 0rem 0rem 10rem;
+  max-width: max-content;
+}
+
+.circle__four > div > svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  max-width: 65rem;
+  max-height: 83rem;
+  /* importante aquí .. */
+}
+
+.detail__card__top {
+  display: inline-flex;
+  margin: 3rem 0rem 1rem 4rem;
+  align-items: center;
+}
+.detail__card__top h2 {
+  margin-left: 1.3rem;
+}
+
+.detail__work__01__and__text {
+  display: inherit;
+  flex-basis: 80%;
+  align-items: flex-end;
+
+  /* padding: 10rem 0rem 10rem 10rem; */
+
+  padding: 5rem 0rem 6rem 10rem;
+}
+
+.first > div > svg {
+  padding-top: 1.7rem;
+  width: 87%;
+}
+
+.detail__card {
+  background-color: #ffffff;
+  margin: 3.5vh;
+  /* Shadow/Card */
+
+  box-shadow: 0px 0px 35px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  width: 380px;
+  /*height: 340px*/
+  height: 365px;
+  z-index: 11;
+  /* mix-blend-mode: color-dodge; */
+}
+
+.detail__card h2 {
+  font-size: 4.2rem;
+  text-align: center;
+}
+
+.detail__card p {
+  text-align: left;
+  white-space: break-spaces;
+  /* width: 75%; */
+  width: 76%;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  line-height: 32.78px;
+  font-size: 21px;
+}
+.detail__card p:nth-child(2) {
+  width: 78%;
+}
+
+.detail__row__work {
+  display: flex;
+  justify-content: space-around;
+  /* padding: 0 2rem; */
+  padding-left: 3.3rem;
+  /* padding: 0 8rem; */
+}
+
+.mainDetail section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* padding: 0 10rem; */
+}
+
+.mainDetail section h1 {
+  margin-top: 6rem;
+}
+
+.detail__work__01__and__text h1 {
+  margin-left: 1rem;
+  letter-spacing: 0.015em;
+}
+
+.parrafo__detail__work:last-of-type {
+  width: 90%;
+}
+
+/* A lograr:*/
+
+/**/
+/*
+.mainDetail aside:nth-child(3) {
+  padding-top: 2rem;
+  /* flex: 0 0 45%; 
+  width: 30%;
+}*/
+
+/*Luego restaurar versión anterior para guardarla en css, prácticas*/
+/*emp a esc con g de t gusto por dentro*/
