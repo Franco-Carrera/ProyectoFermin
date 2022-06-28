@@ -12,8 +12,6 @@ import DetailWork from "./layout/Spaces/DetailWork/DetailWork";
 function App() {
   return (
     <>
-      {/* <ContextWrapper> */}
-
       <Router>
         <Routes>
           {/* <Route path="/" element={<NavBar />} /> */}
@@ -25,7 +23,6 @@ function App() {
       </Router>
 
       {/*text json si sale, limpiar assets, add SEO, and principal effects, (ver web corea japan) */}
-      {/* </ContextWrapper> */}
     </>
   );
 }
