@@ -1,0 +1,147 @@
+.detail__galery {
+  min-height: 100vh;
+}
+.galery__text__top {
+  padding-left: 8.5rem;
+  padding-right: 2rem;
+}
+.galery__text__top > h1 {
+  padding-bottom: 6rem;
+}
+.galery__text__top small {
+  font-size: 16px;
+  display: block;
+}
+.galery__text__top strong {
+  font-weight: 800;
+}
+
+.galery__types__fotography {
+  padding-top: 6.5rem;
+}
+.galery__types__fotography aside {
+  margin: 0 auto;
+  padding: 1rem;
+  box-shadow: 0px 0px 35px 3px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+
+  max-width: max-content;
+  font-size: 16px;
+  font-weight: 800;
+  display: flex;
+  line-height: 27px;
+}
+
+.galery__type {
+  margin: 0 1rem;
+  color: #019eff;
+}
+
+.type {
+  appearance: none;
+  position: relative;
+}
+.type::before {
+  content: "";
+  position: absolute;
+  height: 47px;
+  top: -3.7rem;
+  right: 0;
+  left: -11px;
+  width: 90px;
+  background-color: #019eff;
+  opacity: 0.8;
+  z-index: -1;
+}
+.galery__type:nth-child(3) {
+  color: #ffffff;
+}
+
+.galery__photography__container {
+  padding-top: 4.6rem;
+  padding-left: 82px;
+  padding-right: 42px;
+  display: grid;
+  grid-template-columns: repeat(1, 2.5% 45% 45%);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "rectangle imagen0 imagen1"
+    "rectangle imagen3 imagen3"
+    "rectangle imagen2 imagen4";
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  /* height: 100vh; */
+}
+
+.galery__photography__container figure {
+  display: block;
+  text-align: center;
+}
+
+.figure__img__three {
+  grid-area: imagen3;
+}
+
+.rectangle__galery {
+  width: 2.5rem;
+  grid-area: rectangle;
+}
+
+.galery__footer__invitation {
+  padding: 6.5rem 0rem 0rem 12.8rem;
+}
+.galery__footer__invitation h3 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/*  */
+[class^="box"] {
+  display: flex;
+}
+/*  */
+
+.galery__icons__items {
+  display: inline;
+}
+.galery__icons__items li {
+  padding: 8vh 0vh 0vh 0vh;
+  display: inline-block;
+  max-width: 50%;
+}
+
+/* ______________________ */
+
+.galery__behance__icon {
+  height: 19.95px;
+  width: 30px;
+  padding-bottom: 0.1rem;
+}
+
+.galery__flick__icon {
+  margin-left: 5vh;
+}
+.galery__flick__icon > div svg {
+  height: 21.25px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  min-height: 34vh;
+}
+.circle__six {
+  max-width: max-content;
+  /* padding-top: 4.8rem; */
+}
+.circle__six > div > svg {
+  width: 67rem;
+  height: 24rem;
+  position: relative;
+  bottom: -35px;
+}
+
+/************Components***************/
+/************Modal**********************/

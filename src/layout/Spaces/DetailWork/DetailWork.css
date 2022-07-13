@@ -1,8 +1,4 @@
-/*esta flecha me gusta y se ve prototipada más arriba*/
-/* Mostrar avances y preguntar si se requiere más espacio entre elementos */
-
 .arrowLeftWork {
-  padding: 5rem 0rem 0rem 10rem;
   max-width: max-content;
 }
 
@@ -11,14 +7,13 @@
   top: 0;
   right: 0;
 
-  max-width: 65rem;
-  max-height: 83rem;
-  /* importante aquí .. */
+  max-width: 64rem;
+  max-height: 76rem;
 }
 
 .detail__card__top {
   display: inline-flex;
-  margin: 3rem 0rem 1rem 4rem;
+  margin: 3rem 0rem 1rem 3.5rem;
   align-items: center;
 }
 .detail__card__top h2 {
@@ -29,47 +24,46 @@
   display: inherit;
   flex-basis: 80%;
   align-items: flex-end;
-
-  /* padding: 10rem 0rem 10rem 10rem; */
-
-  padding: 5rem 0rem 6rem 10rem;
+  padding-top: 5.9rem;
+}
+.detail__work__01__and__text h1 {
+  margin-bottom: 1rem;
 }
 
 .first > div > svg {
-  padding-top: 1.7rem;
   width: 87%;
 }
 
 .detail__card {
   background-color: #ffffff;
-  margin: 3.5vh;
-  /* Shadow/Card */
+  margin-right: 7.5vh;
 
+  /* Shadow/Card */
   box-shadow: 0px 0px 35px 3px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  width: 380px;
-  /*height: 340px*/
-  height: 365px;
+  width: 370px;
+  height: 360px;
   z-index: 11;
-  /* mix-blend-mode: color-dodge; */
 }
 
 .detail__card h2 {
   font-size: 4.2rem;
+  font-size: 3.6rem;
+
+  margin-top: 1rem;
   text-align: center;
 }
 
 .detail__card p {
   text-align: left;
   white-space: break-spaces;
-  /* width: 75%; */
   width: 76%;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
 
   line-height: 32.78px;
-  font-size: 21px;
+  font-size: 20px;
 }
 .detail__card p:nth-child(2) {
   width: 78%;
@@ -78,40 +72,26 @@
 .detail__row__work {
   display: flex;
   justify-content: space-around;
-  /* padding: 0 2rem; */
-  padding-left: 3.3rem;
-  /* padding: 0 8rem; */
+  padding-top: 5.5rem;
 }
 
 .mainDetail section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* padding: 0 10rem; */
 }
-
-.mainDetail section h1 {
-  margin-top: 6rem;
+.mainDetail {
+  padding: 4rem 0rem 0rem 7.5rem;
 }
 
 .detail__work__01__and__text h1 {
-  margin-left: 1rem;
+  margin-top: 6rem;
   letter-spacing: 0.015em;
+  margin-left: 1rem;
 }
 
 .parrafo__detail__work:last-of-type {
   width: 90%;
 }
 
-/* A lograr:*/
-
-/**/
-/*
-.mainDetail aside:nth-child(3) {
-  padding-top: 2rem;
-  /* flex: 0 0 45%; 
-  width: 30%;
-}*/
-
-/*Luego restaurar versión anterior para guardarla en css, prácticas*/
 /*dios is here*/

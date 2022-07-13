@@ -1,67 +1,63 @@
-.rectangle__detail {
-  padding-left: 7rem;
-  /* margin-top: -10rem; */
-}
-.section {
-  padding-top: 10rem;
-  padding-bottom: 7rem;
+.container main {
+  padding-left: 2rem;
+  padding-right: 1.5rem;
 }
 
+.detail__container__picture {
+  width: 305px;
+  padding: 0rem 1rem;
+  height: 428px;
+  position: relative;
+}
 .detail__events {
   display: flex;
+  align-self: center;
+}
+
+.detail__container__picture__four {
+  width: 100%;
+  position: relative;
+  height: max-content;
+}
+
+picture .picture__four {
+  width: 100%;
+  height: 43.8%;
+  object-fit: contain;
+}
+
+picture .picture__three {
+  height: 77rem;
 }
 
 .row__wrap {
-  margin-bottom: 3rem;
-}
-.row__wrap picture {
-  width: 92%;
-  margin: 0 1rem;
+  margin-bottom: 1.8rem;
 }
 
-/*
-.row__wrap picture img {
-  /* width: 100%; */
-
-/* width: 330px;
-  height: 547px; */
-
-/* height: 100%; 
-  width: 318px;
-  height: 490px;
-}*/
+.row__wrap picture:nth-child(2) {
+  margin-left: 0rem;
+  margin-right: 0vh;
+}
 
 .row__wrap picture img {
-  /* width: 100%; */
-  /* height: 100%; */
-
-  /* width: 374px;
-  height: 547px; */
-
-  width: 316px;
-  height: 540px;
-
-  /* mix-blend-mode: color; */
   background-color: #0094ff;
+  height: 100%;
 }
 
-.wrap__picture {
-  margin: 0 1rem;
-}
-picture .picture__four {
-  width: 97%;
-  height: 457px;
-  /* que no afecte a otros estilos del sitio */
+.--reset {
+  height: max-content;
+  width: auto;
 }
 
-.picture__three {
-  width: 92%;
-  height: 1032px;
-  margin: 0 0.5rem;
+.rectangle__detail {
+  padding-left: 7rem;
 }
-/* picture .picture__three {
-  height: 38rem;
-  clases dinámicas check
-} */
+
+.section {
+  padding-top: 10rem;
+  padding-bottom: 0rem;
+  padding-right: 7rem;
+  /* Juntar en un solo padding */
+}
 
 /* Delete assets sobrantes and do 3 push  */
