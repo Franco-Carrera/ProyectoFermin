@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+
+.containerAbout {
+  width: 92.5%;
+  position: relative;
+  margin-left: auto;
+  font-family: "Manrope", sans-serif;
+}
+
+.group {
+  position: absolute;
+  max-width: 40.5rem;
+  display: block;
+  right: 0;
+  top: 0;
+}
+.group2 {
+  position: absolute;
+  max-width: 40.5rem;
+  display: block;
+  left: 0;
+  top: 50rem;
+}
+
+.backToHome {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 50.5px;
+
+  width: 5rem;
+}
+
+.aboutHeader {
+  margin-top: 7.5rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 37rem;
+}
+.aboutHeader div img {
+  width: 9rem;
+}
+.aboutHeader div h1 {
+  margin-left: 2rem;
+  font-size: 3.4rem;
+  font-weight: 600;
+  margin-top: 5rem;
+}
+
+.aboutTitle {
+  display: flex;
+}
+
+.aboutHeader div p {
+  text-align: left;
+  font-size: 20px;
+}
+
+.education {
+  position: absolute;
+  top: 50rem;
+  left: 46%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.education h2 {
+  font-size: 3.4rem;
+  font-weight: 600;
+}
+.education div div {
+  display: flex;
+  align-items: center;
+}
+.education div div img {
+  width: 20px;
+  height: 20px;
+}
+.education div div p {
+  margin-left: 1rem;
+  font-size: 20px;
+}

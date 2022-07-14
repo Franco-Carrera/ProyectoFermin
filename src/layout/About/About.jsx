@@ -4,6 +4,7 @@ import imageFermin from "../../assets/image/foto-fermin.webp";
 import two from "../../assets/image/02.svg";
 import { ReactSVG } from "react-svg";
 import { texts } from "../../layout/sectionsText/Home.texts.json";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -42,9 +43,11 @@ const About = () => {
                 <section className="about__contain">
                   <p>{texts.home.thirdSection.descriptionAbout}</p>
                   <aside className="text-center contain__button__home">
-                    <button className="button__home button__home--work__about text-align">
-                      Ver más
-                    </button>
+                    <Link to={`/detail-about`}>
+                      <button className="button__home button__home--work__about text-align">
+                        Ver más
+                      </button>
+                    </Link>
                   </aside>
                 </section>
               </aside>
