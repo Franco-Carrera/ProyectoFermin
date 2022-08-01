@@ -9,38 +9,40 @@ import { texts } from "../../layout/sectionsText/Home.texts.json";
 const Contact = () => {
   return (
     <>
-      <section className="slide">
-        {/* slide-container no coloque */}
-        <section id="contact" className="contact">
-          <main>
-            <aside className="contact__header">
-              <ReactSVG src={three} className="__03" />
-              <h1>¡Contactame!</h1>
-            </aside>
-
-            <p className="text-center">epelefermin@gmail.com</p>
-
-            <article className="contact__social__items">
-              <li className="line__list__item one">
-                <FaBehance />
-              </li>
-
-              {/* Utilitie AQUÍ! */}
-
-              <li className="line__list__item two">
-                <FaWhatsapp />
-              </li>
-            </article>
-          </main>
-
-          <aside className="contact__column__two__circle">
-            <ReactSVG
-              src={circleThree}
-              className="circle__three"
-              alt={texts.home.graphicAlt}
-            />
+      <section
+        id="contact"
+        className="contact sectionChange sectionChangeAnimation"
+      >
+        <main>
+          <aside className="contact__header">
+            <ReactSVG src={three} className="__03" />
+            <h1>¡Contactame!</h1>
           </aside>
-        </section>
+
+          <p className="text-center">epelefermin@gmail.com</p>
+
+          <article className="contact__social__items">
+            <li className="line__list__item one">
+              <a href="https://www.behance.net/FERMIN05" target="__blank">
+                <FaBehance />
+              </a>
+            </li>
+
+            {/* Utilitie AQUÍ! */}
+
+            <li className="line__list__item two">
+              <FaWhatsapp />
+            </li>
+          </article>
+        </main>
+
+        <aside className="contact__column__two__circle">
+          <ReactSVG
+            src={circleThree}
+            className="circle__three"
+            alt={texts.home.graphicAlt}
+          />
+        </aside>
       </section>
     </>
   );

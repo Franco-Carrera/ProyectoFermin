@@ -13,7 +13,7 @@ import canva from "../../../assets/icons/canvaDetail.svg";
 const DetailHabilities = () => {
   return (
     <>
-      <main className="main__habilities">
+      <main className="main__habilities sectionChangeStart">
         <ReactSVG
           src={circle__five}
           className="circle__five"

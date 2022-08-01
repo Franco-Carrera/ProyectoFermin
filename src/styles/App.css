@@ -27,7 +27,6 @@ a {
 
 body {
   margin: 0;
-  /* padding: 0; */
   overflow-x: hidden;
   color: var(--text-color);
   background-color: rgb(252, 252, 252);
@@ -56,131 +55,27 @@ figure {
 
 p {
   max-width: 75ch;
+  line-height: 32.78px;
+  line-clamp: 45;
 }
 
 ul {
   text-decoration: none;
   padding: 0;
-
-  /* line-clamp: ; */
   list-style-type: none;
 }
 
-/*******ScrollSnap*********/
-/*.slides {
-  width: 100%;
-  height: 100vh;
-  overflow-y: scroll;
-  /* scroll-snap-type: [x | y | inline | block | both] [mandatory | proximity]; 
-  scroll-snap-type: none;
-  scroll-snap-type: block mandatory;
-
-  /* scroll-snap-type: y mandatory;
-  scroll-snap-type: y proximity;
-  scroll-snap-type: both mandatory; 
-
-  /* overflow-x 
-}
-*/
-.slides {
-  width: 100%;
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: none;
-  scroll-snap-type: block mandatory;
-
-  overflow-x: hidden;
+.sectionChange {
+  scroll-snap-align: center;
 }
 
-.slide {
-  width: 100%;
-  height: inherit;
-  /* background-color: #1e2345; */
+.sectionChangeStart {
   scroll-snap-align: start;
-  scroll-snap-align: none;
-  scroll-snap-align: end;
-  scroll-snap-align: center;
 }
-
-/*
-.slide-container {
-  /* width: 80%; 
-  /* height: inherit; 
-  /* margin: 0 auto; 
-
-  /* display: flex; */
-
-/* flex-direction: column; 
-  /* justify-content: center; 
-  /* align-items: center; 
-  /* font-size: 3vw; 
-  /* color: #d9e8f0; 
-}
-*/
-
-/*
-.slide {
-  width: 100%;
-  height: inherit;
-
-  /* background-color: #1e2345; 
-
-  scroll-snap-align: start;
-  scroll-snap-align: none;
-  scroll-snap-align: end;
-  scroll-snap-align: center;
-}
-
-.slide:nth-child(even) {
-  /* background-color: #108eb4; 
-}
-
-.slide-container {
-  width: 80%;
-  height: inherit;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 3vw;
-  color: #d9e8f0;
-}
-/*
-
-
-.slides {
-  width: 100%;
-  height: 100vh;
-  overflow-y: scroll;
-
-  scroll-snap-type: none;
-  scroll-snap-type: y mandatory;
-
-  overflow-x: hidden;
-}
-.slide-container {
-  /* width: 80%; 
-  height: inherit;
-  /* margin: 0 auto; 
-}
-/* esta saliendo pero muchos estilos se modificaron */
-/*
-.slide {
-  width: 100%;
-  height: inherit;
-
-  scroll-snap-align: center;
-  /* display: flex; 
-  /* flex-direction: column; 
-  /* margin: 0 auto; 
-}
-*/
-/*****************/
 
 /***********Utilities**************/
 .button__home {
-  font-size: 2rem;
+  font-size: 18px;
   border: none;
   cursor: pointer;
   border-radius: 5rem;
@@ -188,12 +83,34 @@ ul {
   background-color: #019eff;
   letter-spacing: 0.02em;
 }
+.button__home:hover {
+  background-color: #016bf3;
+}
 
 .button__home--work__about {
   padding: 1.5rem 4.8rem;
   width: 176px;
   height: 59px;
-  margin-top: 5.5rem;
+  /* margin-top: 5.5rem; */
+  margin-top: 8rem;
+}
+
+/* last utilitie  */
+[class^="box"] {
+  display: flex;
+}
+
+/* ordenar assets */
+
+/* descomentar comments */
+/* guardo copia subo esta rama */
+
+/* genero utilities */
+/* ordeno folders, dependencies */
+/* hosting */
+
+.line-height {
+  line-height: 32.78px;
 }
 
 .pointer {
@@ -209,4 +126,16 @@ h2 {
   font-weight: 800;
   letter-spacing: 0.015em;
   line-height: 100%;
+}
+
+.section {
+  padding: 10rem 7rem 0rem 0rem;
+}
+
+.letter-spacing {
+  letter-spacing: 0.015em;
+}
+
+.max-content-width {
+  max-width: max-content;
 }

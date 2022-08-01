@@ -1,27 +1,13 @@
-/*Context para probar el Home.texts.json* Por ahora sin uso */
-
-import { createContext, useEffect, useState } from "react";
+import { createContext, useEffect } from "react";
 export const Context = createContext();
 
 export const ContextWrapper = ({ children }) => {
-  // const [language, setLanguage] = useState("es");
-  const [offSetY, setOffSetY] = useState(0);
-
-  const handleScroll = () => {
-    setOffSetY(window.pageYOffset);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll); //entenderlo //propias reglas
+  window.addEventListener("scroll", function () {
+    document.scrollingElement.style.setProperty(
+      "scroll-snap-type",
+      "y mandatory"
+    );
   });
 
-  return (
-    <Context.Provider value={{ offSetY, setOffSetY }}>
-      {/* <main className="app-container">
-      </main> */}
-      {children}
-    </Context.Provider>
-  );
+  return <Context.Provider value={{}}>{children}</Context.Provider>;
 };

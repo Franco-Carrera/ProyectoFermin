@@ -1,4 +1,3 @@
-import React from "react";
 import "./DetailWork.css";
 import arrowLeftWork from "../../../assets/image/arrowLeftWork.svg";
 import one from "../../../assets/image/01.svg";
@@ -9,21 +8,18 @@ import circle__four from "../../../assets/image/Circle-4.svg";
 import detail01 from "../../../assets/image/detail01.svg";
 import detail02 from "../../../assets/image/detail02.svg";
 import detail03 from "../../../assets/image/detail03.svg";
-import DetailEvents from "../DetailEvents/DetailEvents";
-import DetailHabilities from "../DetailHabilities/DetailHabilities";
-import DetailGalery from "../DetailGalery/DetailGalery";
 
 const DetailWork = () => {
   return (
     <>
-      <main className="mainDetail">
-        <Link to="/">
-          <ReactSVG src={arrowLeftWork} className="arrowLeftWork" />
+      <main className="mainDetail sectionChangeStart">
+        <Link to="/" style={{ cursor: "auto" }}>
+          <ReactSVG src={arrowLeftWork} className="arrowLeftWork pointer" />
         </Link>
 
         <section>
           <aside className="detail__work__01__and__text">
-            <ReactSVG src={one} className="first" alt={texts.Cards.graphic01} />
+            <img src={one} className="first" alt={texts.Cards.graphic01} />
             <h1>{texts.Cards.title}</h1>
           </aside>
 
@@ -60,10 +56,6 @@ const DetailWork = () => {
           />
         </section>
       </main>
-
-      <DetailEvents />
-      <DetailHabilities />
-      <DetailGalery />
     </>
   );
 };

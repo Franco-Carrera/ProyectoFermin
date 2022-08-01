@@ -15,10 +15,13 @@
       "cardTwo": "Recogida y analizada la información de nuestro cliente, se confecciona la Estrategia a desarrollar. Esta variará según sus necesidades del cliente",
       "graphic03Card": "Icono 03 presenta la tercera temática",
       "subtitleThree": "Creación",
-      "cardThree": " Superadas las dos primeras instancias pasamos a crear contendio digital: posteos, carrusel, reels. Cada posteo se elabora con un objetivo en sí mismo, respondiendo a un objetivo macro."
+      "cardThree": "Superadas las dos primeras instancias pasamos a crear contendio digital: posteos, carrusel, reels. Cada posteo se elabora con un objetivo en sí mismo, respondiendo a un objetivo macro."
     },
     "Events": {
-      "": ""
+      "imageEventOne": "Imagen de color celeste, en la cual se hace una invitación al evento la mulata",
+      "imageEventTwo": "Imagen de color celeste azulado, en la cual se hace una invitación al evento de la comunidad ",
+      "imageEventThree": "Imagen de color celeste azulado, en la cual se presenta el festival de la víspera",
+      "imageEventFour": "Imagen de color celeste azulado, donde se invita a la música para eventos"
     },
     "Habilities": {
       "skillOne": "Adobe Photoshop",
@@ -45,6 +48,10 @@
       "FigureOne": "Imagen de una mujer recostada sobre un árbol con un gesto de llanto",
       "FigureTwo": "Imagen de una mujer en primer plano que acompaña su accesorio de payaso con un gesto dramático",
       "FigureThree": "Imagen de tres mujeres que caminan sobre la calle de espaldas a la cámara",
+
+      "closeModal": "Ícono para cerrar el modal",
+      "arrowRightModal": "Ícono para desplazarse a la imagen posterior",
+      "arrowLeftModal": "Ícono para desplazarse a la imagen anterior",
 
       "invitationTitle": "¿Te gustaría ver más? ¡Seguime!"
     }

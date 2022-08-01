@@ -1,5 +1,9 @@
-.about {
-  padding: 5vh 0vh 27vh;
+.about__col__box__img {
+  width: 385px;
+  height: 510px;
+  position: absolute;
+  top: 188px;
+  left: 120px;
 }
 
 .about__col__circle__and__img {
@@ -18,11 +22,9 @@
   margin: 1rem 0rem 1rem 1.5rem;
 }
 
-/* BEM PARA LOGOS */
 .__02 > div > svg {
-  width: 87%;
+  width: 85%;
 }
-/* Tamaño de logos check in web jesus */
 
 .about__col__02 {
   display: flex;
@@ -33,16 +35,13 @@
   font-size: 1.9rem;
   width: 72%;
   margin-left: auto;
-  padding: 6rem 0 1.5rem;
+  padding-top: 7rem;
 }
 
-.contain__button__home button {
-  margin-right: 15rem;
-}
-
-.circle__two > div > svg {
-  width: 58rem;
-  height: max-content; /*new*/
+.about__img {
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .backdrop-filter {
@@ -56,36 +55,22 @@
   align-items: center;
   text-align: center;
   background-color: cyan;
-  /* opacity: 0.96; */
   mix-blend-mode: screen;
   filter: brightness(0.58) contrast(1.5) hue-rotate(25deg);
+}
+.circle__two {
+  height: 80rem;
+}
+
+.circle__two > div > svg {
+  width: 58rem;
+  height: max-content;
+}
+
+.contain__button__home button {
+  margin-right: 14.4rem;
 }
 
 .--detail {
   mix-blend-mode: color;
 }
-
-.about__col__box__img {
-  width: 385px;
-  height: 510px;
-  position: absolute;
-  top: 188px;
-  left: 120px;
-}
-
-.circle__two {
-  max-width: max-content;
-  height: 80rem;
-}
-
-.about__img {
-  width: 100%;
-  height: 100%;
-  /* object-fit: contain; */
-  object-fit: cover;
-  object-position: top;
-}
-
-/* BEM DE SOLO IMGS */
-
-/* Mejorar sección respecto a saber cuanto tamaño ocupa el círculo, cuanto el texto */

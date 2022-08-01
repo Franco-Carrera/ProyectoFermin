@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./NavBar.css";
-
-// import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -9,7 +7,6 @@ const NavBar = () => {
   const changeBackground = () => {
     if (window.scrollY >= 40) {
       setNavbar(true);
-      console.log(window.scrollY);
     } else {
       setNavbar(false);
     }
@@ -17,16 +14,9 @@ const NavBar = () => {
 
   window.addEventListener("scroll", changeBackground);
 
-  // useEffect(() => {}, []);
-
-  //Context para ver si esta scroll se pone active?
-  //no me toma evento scroll, de ContextWrapper. x eso decidir
-  //vale la pena el scroll effect ?
-
   return (
     <>
-      {/* <nav className={"NavBar active"}> */}
-      <nav className={navbar ? "NavBar active" : "NavBar"}>
+      <nav className={!navbar ? "NavBar" : "NavBar active"}>
         <section className="NavBar__Right__Options">
           <a href="#home" className="Option">
             <button className="navbar__item">Inicio</button>

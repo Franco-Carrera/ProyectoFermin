@@ -9,51 +9,52 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <>
-      <section className="slide">
-        <section id="about" className="about">
-          <article>
-            <aside className="about__col__circle__and__img">
-              <ReactSVG
-                src={circleTwo}
-                className="circle__two"
-                alt={texts.home.graphicAlt}
+      <section
+        id="about"
+        className="about sectionChange sectionChangeAnimation"
+      >
+        <article>
+          <aside className="about__col__circle__and__img">
+            <ReactSVG
+              src={circleTwo}
+              className="circle__two"
+              alt={texts.home.graphicAlt}
+            />
+
+            <div className="about__col__box__img">
+              <img
+                src={imageFermin}
+                alt={texts.home.thirdSection.imageFermin}
+                className="about__img"
               />
+              <div className="backdrop-filter"></div>
+            </div>
 
-              <div className="about__col__box__img">
-                <img
-                  src={imageFermin}
-                  alt={texts.home.thirdSection.imageFermin}
-                  className="about__img"
+            <aside className="about__col__02__and__text">
+              <section className="about__col__02">
+                <ReactSVG
+                  src={two}
+                  className="__02"
+                  alt={texts.home.thirdSection.graphic02}
                 />
-                <div className="backdrop-filter"></div>
-              </div>
+                <h1 className="about__col__text__title">
+                  {texts.home.thirdSection.titleAbout}
+                </h1>
+              </section>
 
-              <aside className="about__col__02__and__text">
-                <section className="about__col__02">
-                  <ReactSVG
-                    src={two}
-                    className="__02"
-                    alt={texts.home.thirdSection.graphic02}
-                  />
-                  <h1 className="about__col__text__title">
-                    {texts.home.thirdSection.titleAbout}
-                  </h1>
-                </section>
-
-                <section className="about__contain">
-                  <p>{texts.home.thirdSection.descriptionAbout}</p>
-                  <aside className="text-center contain__button__home">
-                    <Link to={`/detail-about`}>
-                      <button className="button__home button__home--work__about text-align">
-                        Ver más
-                      </button>
-                    </Link>
-                  </aside>
-                </section>
-              </aside>
+              <section className="about__contain">
+                <p>{texts.home.thirdSection.descriptionAbout}</p>
+                <aside className="text-center contain__button__home">
+                  <Link to={`/detail-about`}>
+                    <button className="button__home button__home--work__about text-align">
+                      Ver más
+                    </button>
+                  </Link>
+                </aside>
+              </section>
             </aside>
-          </article>
-        </section>
+          </aside>
+        </article>
       </section>
     </>
   );

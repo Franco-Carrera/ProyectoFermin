@@ -1,26 +1,25 @@
 import "./styles/App.css";
-import { ContextWrapper } from "./utils/Context";
+import { Context, ContextWrapper } from "./utils/Context";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-import DetailAbout from "./layout/Spaces/DetailAbout/DetailAbout";
-import DetailWork from "./layout/Spaces/DetailWork/DetailWork";
 import ItemListContainer from "./components/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer";
+import DetailAbout from "./layout/Spaces/DetailAbout/DetailAbout";
 
-//import NavBar from "./layout/NavBar/NavBar";
+//para que me sirve poner un exact en home, o tres, justo aquí
+
+//Queda comprobar los a href de Home
+//CONTACTO A FLICKR
+//ver que no queden archivos import sobrantes
 
 function App() {
   return (
     <>
       <ContextWrapper>
-        {/* <NavBar /> */}
         <Router>
           <Routes>
-            <Route path="/" element={<ItemListContainer />} />
-
+            <Route exact path="/" element={<ItemListContainer />} />
+            <Route path="/detail-work" element={<ItemDetailContainer />} />
             <Route path="/detail-about" element={<DetailAbout />} />
-            {/* </> */}
-
-            <Route path="/detail-work" element={<DetailWork />} />
           </Routes>
         </Router>
       </ContextWrapper>

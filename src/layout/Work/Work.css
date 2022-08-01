@@ -6,9 +6,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10rem 0rem 0rem 6rem;
-
-  /* height: 100%; */
+  padding: 10rem 0rem 6rem 6rem;
 }
 
 .work main {
@@ -29,15 +27,13 @@
 }
 
 .work__text {
-  margin-top: 5rem;
+  margin-top: 7rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 .work__text aside {
-  font-weight: 500;
   font-size: 1.8rem;
-  line-height: 33px;
   white-space: break-spaces;
   padding: 1vh 0vh 1vh 4vh;
 }
@@ -47,11 +43,6 @@
 }
 
 .work__picture > img {
-  width: 85%;
+  width: 84%;
   z-index: 657;
 }
-
-/* .button__home--work small {
-  font-size: 1.7rem;
-  font-weight: 800;
-} MOSTRAR A EQUIPO */
