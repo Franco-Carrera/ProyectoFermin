@@ -1,5 +1,5 @@
 import "./styles/App.css";
-import { Context, ContextWrapper } from "./utils/Context";
+import { ContextWrapper } from "./utils/Context";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ItemListContainer from "./components/ItemListContainer";
 import ItemDetailContainer from "./components/ItemDetailContainer";

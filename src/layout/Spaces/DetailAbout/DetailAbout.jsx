@@ -1,11 +1,10 @@
 import "./DetailAbout.css";
 import { Link } from "react-router-dom";
 import { DetailContextWrapper } from "../../../utils/DetailContext";
-
-import backIcon from "../../../assets/icons/Vector.svg";
+import arrowLeftAbout from "../../../assets/image/arrowLeftAbout.svg";
 import two from "../../../assets/icons/02about.svg";
-import Group from "../../../assets/icons/Group.svg";
-import Group2 from "../../../assets/icons/Group2.svg";
+import circle__seven from "../../../assets/image/Circle-7.svg";
+import circle__eight from "../../../assets/image/Circle-8.svg";
 import Ellipse from "../../../assets/icons/Ellipse2.svg";
 import Ellipse2 from "../../../assets/icons/Ellipse3.svg";
 import Ellipse3 from "../../../assets/icons/Ellipse4.svg";
@@ -16,9 +15,13 @@ const DetailAbout = () => {
       <DetailContextWrapper>
         <div className="containerAbout sectionChangeStart">
           <Link to={`/`}>
-            <img src={backIcon} alt="volver a Home" className="backToHome" />
+            <img
+              src={arrowLeftAbout}
+              alt="volver a Home"
+              className="backToHome"
+            />
           </Link>
-          <img src={Group} alt="group" className="group" />
+          <img src={circle__seven} alt="group" className="group" />
           {/* <a href="https://proy-ferm.netlify.app/"> */}
 
           {/* es necesario ese enlace de ahref, para producción. Este es el paso. Pero antes*/}
@@ -56,7 +59,7 @@ const DetailAbout = () => {
         </div>
 
         <section className="detailAbout__two sectionChange">
-          <img src={Group2} alt="group" className="group2" />
+          <img src={circle__eight} alt="group" className="group2" />
           <div className="education">
             <h1>Educación</h1>
             <div className="education__col__container">

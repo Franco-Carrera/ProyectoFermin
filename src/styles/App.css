@@ -28,6 +28,7 @@ a {
 body {
   margin: 0;
   overflow-x: hidden;
+  /* overflow-y: scroll; */
   color: var(--text-color);
   background-color: rgb(252, 252, 252);
 }
@@ -71,6 +72,16 @@ ul {
 
 .sectionChangeStart {
   scroll-snap-align: start;
+}
+
+.sectionChangeAnimationLoad {
+  scroll-snap-type: block;
+  transition: 3.35s ease-in-out;
+}
+
+.sectionChangeAnimationScroll {
+  scroll-snap-type: y mandatory;
+  transition: 1.5s ease-in;
 }
 
 /***********Utilities**************/
