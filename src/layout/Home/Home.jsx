@@ -1,5 +1,5 @@
 import "./Home.css";
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import { ReactSVG } from "react-svg";
 import { texts } from "../../layout/sectionsText/Home.texts.json";
 import { FaBehance } from "react-icons/fa";
@@ -11,11 +11,12 @@ import rectangle2 from "../../assets/image/Rectangle2.svg";
 import rectangle3 from "../../assets/image/Rectangle3.svg";
 import logo1 from "../../assets/image/LogoFermin1.svg";
 import NavBar from "../NavBar/NavBar";
-import Work from "../Work/Work";
+// import Work from "../Work/Work";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
+// import Item from "../../components/Item";
 
-const Home = () => {
+const Home = ({ data }) => {
   const [offSetY, setOffSetY] = useState(0);
 
   const handleScroll = () => {
@@ -31,6 +32,8 @@ const Home = () => {
   return (
     <>
       <NavBar />
+
+      {/* <h2>{process.env.REACT__DATE || "alo"}</h2> */}
 
       <ReactSVG src={logo0} alt="logo0" className="image__0" />
       <section id="home" className="main sectionChangeStart">
@@ -73,6 +76,8 @@ const Home = () => {
                 <span>{texts.home.firstSection.subSloganTwo}</span>
               </h3>
 
+              {/* <h4>{datData.title}</h4>  */}
+
               <Link to="/detail-work">
                 <button className="button__home" type="submit">
                   {texts.home.firstSection.button}
@@ -100,8 +105,13 @@ const Home = () => {
         />
       </section>
 
-      <Work />
+      {/* <Work /> */}
 
+      {/* {data.map((dataItemHome) => {
+        <Item key={dataItemHome.id} itemData={dataItemHome} />;
+      })} */}
+
+      {/* idea del map  */}
       <About />
       <Contact />
     </>

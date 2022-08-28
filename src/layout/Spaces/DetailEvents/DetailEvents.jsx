@@ -19,14 +19,14 @@ const DetailEvents = () => {
               <aside className="detail__container__picture">
                 <picture>
                   <img src={pictureOne} alt={texts.Events.imageEventOne} />
-                  <div className="backdrop-filter --detail"></div>
+                  <div className="backdrop-filter backdrop-filter-row-wrap-picture --detail"></div>
                 </picture>
               </aside>
 
               <aside className="detail__container__picture">
                 <picture>
                   <img src={picture__two} alt={texts.Events.imageEventTwo} />
-                  <div className="backdrop-filter --detail"></div>
+                  <div className="backdrop-filter backdrop-filter-row-wrap-picture --detail"></div>
                 </picture>
               </aside>
             </section>
@@ -38,7 +38,7 @@ const DetailEvents = () => {
                   alt={texts.Events.imageEventFour}
                   className="picture__four"
                 />
-                <div className="backdrop-filter --detail"></div>
+                <div className="backdrop-filter backdrop-filter-wrap-picture --detail"></div>
               </picture>
             </aside>
           </main>
@@ -50,7 +50,7 @@ const DetailEvents = () => {
                 alt={texts.Events.imageEventThree}
                 className="picture__three"
               />
-              <div className="backdrop-filter --detail"></div>
+              <div className="backdrop-filter backdrop-filter-picture-four --detail"></div>
             </picture>
           </aside>
         </article>

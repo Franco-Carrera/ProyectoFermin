@@ -142,3 +142,66 @@ h3 span {
   height: 22.5px;
   cursor: pointer;
 }
+
+@media screen and (min-width: 3645px) and (max-width: 3700px) {
+  .main__col {
+    height: 84vh;
+    padding-top: 30rem;
+  }
+
+  .main__col__info {
+    padding: 10vh 0vh 2vh 9vh;
+  }
+
+  .main__col__rectangles {
+    width: 24px;
+    position: relative;
+    top: 389px;
+    left: 9rem;
+  }
+
+  .main__col h1 {
+    font-size: 12rem;
+  }
+
+  .rectangle__one > div > svg {
+    width: 30px;
+    height: 103px;
+  }
+
+  .rectangle__two > div > svg {
+    height: 106px;
+    width: 29px;
+    bottom: 18px;
+  }
+
+  .rectangle__three > div > svg {
+    height: 158px;
+    bottom: 14px;
+    width: 28px;
+  }
+
+  .col__description h3 {
+    font-size: 3.5rem;
+  }
+
+  .button__home {
+    font-size: 38px;
+  }
+
+  .logo__graphic > div > svg {
+    width: 175rem;
+    top: 128px;
+    height: max-content;
+  }
+
+  .one svg {
+    height: 4.7rem;
+    width: 90px;
+  }
+
+  .two svg {
+    height: 4.7rem;
+    width: 90px;
+  }
+}

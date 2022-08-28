@@ -63,3 +63,9 @@
   font-style: normal; /*default*/
   cursor: pointer;
 }
+
+@media screen and (min-width: 3645px) and (max-width: 3700px) {
+  .navbar__item {
+    font-size: 2.8rem;
+  }
+}

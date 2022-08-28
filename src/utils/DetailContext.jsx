@@ -6,5 +6,7 @@ export const DetailContextWrapper = ({ children }) => {
     window.scrollBy(0, -window.innerHeight);
   }, []);
 
+  //Comprobar su uso
+
   return <DetailContext.Provider value={{}}>{children}</DetailContext.Provider>;
 };

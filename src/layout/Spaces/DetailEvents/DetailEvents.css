@@ -1,3 +1,16 @@
+.backdrop-filter-row-wrap-picture {
+  left: 11px;
+  width: 94%;
+}
+.backdrop-filter-wrap-picture {
+  left: 11px;
+  width: 97%;
+  height: 99%;
+}
+.backdrop-filter-picture-four {
+  height: 99.5%;
+}
+
 .container main {
   padding: 0rem 1.5rem 0rem 2rem;
 }

@@ -25,6 +25,11 @@ a {
   cursor: pointer;
 }
 
+#root {
+  background-image: url(../assets/image/papelBlancoFondo_auto_x2.jpg);
+  background-repeat: no-repeat;
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
@@ -55,9 +60,9 @@ figure {
 }
 
 p {
-  max-width: 75ch;
+  /* max-width: 75ch; */
   line-height: 32.78px;
-  line-clamp: 45;
+  /* line-clamp: 45; */
 }
 
 ul {
@@ -85,6 +90,22 @@ ul {
 }
 
 /***********Utilities**************/
+
+.backdrop-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: cyan;
+  mix-blend-mode: screen;
+  filter: brightness(0.58) contrast(1.5) hue-rotate(25deg);
+}
+
 .button__home {
   font-size: 18px;
   border: none;
@@ -149,4 +170,8 @@ h2 {
 
 .max-content-width {
   max-width: max-content;
+}
+
+.NavLinkWork {
+  padding: 8px 16px;
 }
