@@ -1,10 +1,6 @@
 import { useEffect, useState } from "react";
 import ItemList from "./ItemList";
-import {
-  getData,
-  getDataGeneral,
-  getSubcategories,
-} from "../utils/firebaseConfig";
+import { getData } from "../utils/firebaseConfig";
 import { useParams } from "react-router-dom";
 
 import NavBar from "../layout/NavBar/NavBar";
@@ -126,6 +122,8 @@ const ItemListContainer = () => {
   
 } */}
       </main>
+
+      {/* podríamos poner también About y Contact */}
     </>
   );
 };

@@ -11,12 +11,12 @@ import rectangle2 from "../../assets/image/Rectangle2.svg";
 import rectangle3 from "../../assets/image/Rectangle3.svg";
 import logo1 from "../../assets/image/LogoFermin1.svg";
 import NavBar from "../NavBar/NavBar";
-// import Work from "../Work/Work";
+import Work from "../Work/Work";
 import About from "../About/About";
 import Contact from "../Contact/Contact";
 // import Item from "../../components/Item";
 
-const Home = ({ data }) => {
+const Home = () => {
   const [offSetY, setOffSetY] = useState(0);
 
   const handleScroll = () => {
@@ -105,7 +105,7 @@ const Home = ({ data }) => {
         />
       </section>
 
-      {/* <Work /> */}
+      <Work />
 
       {/* {data.map((dataItemHome) => {
         <Item key={dataItemHome.id} itemData={dataItemHome} />;

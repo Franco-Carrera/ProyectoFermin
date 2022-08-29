@@ -70,3 +70,18 @@ export const getData = (key, operator, value) => {
       });
   });
 };
+
+export const getLinks = () => {
+  return new Promise((resolve, reject) => {
+    getDocs(collection(db, "enlaces"))
+      .then((querySnapshot) => {
+        const links = querySnapshot.docs.map((doc) => {
+          return { id: doc.id, ...doc.data() };
+        });
+        resolve(links);
+      })
+      .catch((err) => {
+        console.log("Error searching items", err);
+      });
+  });
+};

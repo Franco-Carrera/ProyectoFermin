@@ -1,15 +1,20 @@
 import "./Work.css";
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { ReactSVG } from "react-svg";
 import one from "../../assets/image/01.svg";
+import rectangle__galery from "../../assets/image/RectangleDetailGalery.svg";
 import { texts } from "../../layout/sectionsText/Home.texts.json";
 import { getCategories } from "../../utils/firebaseConfig";
+import ItemListContainerTwo from "../../components/ItemListContainerTwo";
 
 //sectionChangeAnimation sin uso
 
 //Componente que usa clases universales de DetailGalery
 
 const Work = () => {
+  const { categoryid } = useParams();
   const [categories, setCategories] = useState();
 
   const navLinkStyles = ({ isActive }) => {
@@ -57,6 +62,13 @@ const Work = () => {
         </main>
       </section>
 
+      {/* <article> */}
+      {/* <h4>{datData.description}</h4> */}
+      {/* <img src={datData.imgWork2} alt="" /> */}
+      {/* </article> */}
+      {/* <ItemListContainerTwo /> */}
+      {/* que pasa si pones ItemListContainer */}
+
       <header className="myHeaderNav galery__types__fotography sectionChange">
         <aside>
           <div className="radio">
@@ -82,6 +94,18 @@ const Work = () => {
           </div>
         </aside>
       </header>
+
+      {!categoryid && (
+        <main className="galery__photography__container">
+          <ReactSVG
+            src={rectangle__galery}
+            alt={texts.GraphicRectangle}
+            className="rectangle__galery"
+          />
+          <ItemListContainerTwo />
+        </main>
+      )}
+      {/* <ItemListContainerTwo /> */}
     </>
   );
 };
