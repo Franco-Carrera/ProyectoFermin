@@ -1,14 +1,13 @@
-import Item from "../components/Item";
-
-const ItemList = ({ data }) => {
+import Item from "./Item";
+// DEVUELVE EL PEDIDO TRAIDO DE ITEMLISTCONTAINER
+function ItemList({ links }) {
   return (
-    <>
-      {/* type === "general" && */}
-      {data.map((dataItem) => (
-        <Item key={dataItem.id} itemData={dataItem} />
+    <main className="containerLinks">
+      {links.map((link) => (
+        <Item key={link.id} linkData={link} />
       ))}
-    </>
+    </main>
   );
-};
+}
 
 export default ItemList;

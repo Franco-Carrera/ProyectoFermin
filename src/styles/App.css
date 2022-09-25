@@ -20,20 +20,32 @@ html {
   box-sizing: inherit;
 }
 
+/* empezar a minimalizar */
 a {
   text-decoration: none;
   cursor: pointer;
 }
 
-#root {
+/* #root {
+  background-image: url(../assets/image/papelBlancoFondo_auto_x2.jpg);
+  background-repeat: no-repeat;
+} */
+
+.todoHome {
   background-image: url(../assets/image/papelBlancoFondo_auto_x2.jpg);
   background-repeat: no-repeat;
 }
 
+.todoDetail {
+  background-image: url(../assets/image/papelBlancoFondo_auto_x2.jpg);
+  background-repeat: no-repeat;
+}
+
+/* tratar de sacar una imagen pa todo root quizá, o para app. */
+
 body {
   margin: 0;
   overflow-x: hidden;
-  /* overflow-y: scroll; */
   color: var(--text-color);
   background-color: rgb(252, 252, 252);
 }
@@ -62,7 +74,6 @@ figure {
 p {
   /* max-width: 75ch; */
   line-height: 32.78px;
-  /* line-clamp: 45; */
 }
 
 ul {
@@ -79,14 +90,31 @@ ul {
   scroll-snap-align: start;
 }
 
-.sectionChangeAnimationLoad {
-  scroll-snap-type: block;
-  transition: 3.35s ease-in-out;
+/*  */
+/*
+.scroll-container {
+  height: 100vh;
+  width: 100%;
 }
-
+.scroll-container {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+.scroll-area {
+  scroll-snap-align: center;
+}
+.scroll-container,
+.scroll-area {
+  margin: 0 auto;
+}
+*/
+/*  */
+.sectionChangeAnimationLoad {
+  scroll-snap-type: both;
+  /* transition: 3.35s ease-in-out; */
+}
 .sectionChangeAnimationScroll {
   scroll-snap-type: y mandatory;
-  transition: 1.5s ease-in;
 }
 
 /***********Utilities**************/
@@ -103,7 +131,8 @@ ul {
   text-align: center;
   background-color: cyan;
   mix-blend-mode: screen;
-  filter: brightness(0.58) contrast(1.5) hue-rotate(25deg);
+  filter: brightness(0.48) contrast(1.5) hue-rotate(25deg);
+  /* brightness(0.58) */
 }
 
 .button__home {
